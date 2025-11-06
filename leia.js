@@ -86,13 +86,15 @@ for (let i = 0; i < 3; i++) {
 }
 
 //Declaração de matriz
-let nomes = [[]];
+const nomes = [];
+console.table(nomes);
 
 //Primeiro acessa as linhas
-for (let i = 0; i < 5; i++) {
+for (let i = 0; i < 3; i++) {
+    nomes[i] = [];
     //Depois acessa as colunas
     for (let j = 0; j < 2; j++) {
-        nomes = read.question("Linha" + i + "Coluna " + j + ": ");
+        nomes[i,j] = read.question(`Linha${i}, Coluna${j}: `);
     }
 }
 
