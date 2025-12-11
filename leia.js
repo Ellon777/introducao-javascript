@@ -6,6 +6,11 @@ var pepe = "pepe"; //Evitar
 //Saída de dados
 console.log("O nome é: ", nome);
 
+//Entrada de dados
+const leia = require("readline-sync");
+let sobrenome = leia.question("Digite o sobrenome: ");
+console.log("O sobrenome é: ", sobrenome);
+
 //Operadores
 //Atribuição =
 //Igualdade == ou ===
@@ -80,6 +85,8 @@ let nomes = [];
 nomes[0] = "João";
 nomes[1] = "Maria";
 nomes[2] = "José";
+nomes = leia.question("Digite um nome: ");
+
 //Acessando cada posição do vetor
 for (let i = 0; i < 3; i++) {
     console.log(nomes[i]);
